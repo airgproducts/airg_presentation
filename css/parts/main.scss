@@ -1,0 +1,29 @@
+
+.reveal section {
+
+  img {
+    max-height: 90vh;
+  }
+
+  img.main_logo {
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  .yt_wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
