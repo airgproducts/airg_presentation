@@ -53,7 +53,7 @@
 				</section>
 				<section>
 					<p>
-						airG is well known for the relaxed atmosphere and the positive lifestyle of Richard.<br>
+						airG is well known for the relaxed atmosphere and the inspirational lifestyle of Richard.<br>
 						For this reason he gave his company to two young pilots from Innsbruck to ensure it
 						is being continued in his spirit. To make sure it is driven by passion, not profit.
 					</p>
@@ -92,7 +92,7 @@
 				<section>
 					<h1>Development</h1>
 				</section>
-				<section>
+				<section data-state="gliderview">
 					<div class="gliderview" data-url="data/glider.json"></div>
 				</section>
 				<section data-background-image="data/patterns.gif">
@@ -152,6 +152,9 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			Reveal.addEventListener( 'gliderview', function() {
+				window.glider.refs.canvas.fitView();
+			}, false );
 		</script>
 
 		<script src="js/gliderviewer.js"></script>
